@@ -18,6 +18,10 @@
 - /events/{offset} - returns number of events grouped by the event type for a given offset( last x minutes)
 - /repo-stats/{owner}/{repo} - returns most frequent event and most frequent user for a given repository
 
+owner: owner of the repository, for example `matousidc`<br>
+repo: name of the repository, for example `github_events`<br>
+offset: time in minutes, for example `30`
+
 ### Comments:
 
 - used python 3.11
