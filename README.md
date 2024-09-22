@@ -10,13 +10,13 @@
 - ``````
   GITHUB_TOKEN=ghp_sdfsdfsdf62646sdf56mnmBJ1QQluasffghFdES
 - pip install -r requirements.txt
-- fastapi dev api.py
+- fastapi dev
 
 ### Endpoints:
 
 - /pulls-delay/{owner}/{repo} - returns the average time between pull requests for a given repository
 - /events/{offset} - returns number of events grouped by the event type for a given offset( last x minutes)
-- /repo_stats/{owner}/{repo} - returns most frequent event and most frequent user for a given repository
+- /repo-stats/{owner}/{repo} - returns most frequent event and most frequent user for a given repository
 
 ### Comments:
 

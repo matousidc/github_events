@@ -9,9 +9,9 @@ def root():
     return {
         "message": "Welcome to the API. Here are the available endpoints:",
         "endpoints": {
-            "Endpoint 1": "/pulls_delay/{owner}/{repo}",
+            "Endpoint 1": "/pulls-delay/{owner}/{repo}",
             "Endpoint 2": "/events/{offset}",
-            "Endpoint 3": "/repo_stats/{owner}/{repo}"
+            "Endpoint 3": "/repo-stats/{owner}/{repo}"
         }
     }
 
@@ -32,7 +32,7 @@ def events(offset: int):
     return events_count(offset)
 
 
-@app.get("/repo_stats/{owner}/{repo}", status_code=200)
+@app.get("/repo-stats/{owner}/{repo}", status_code=200)
 def repo_stats(owner: str, repo: str):
     """most frequent event and most frequent user for a given repository"""
     res = repo_info(owner, repo)
